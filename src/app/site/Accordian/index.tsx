@@ -1,13 +1,13 @@
-// @ts-nocheck
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import React, { useState } from "react";
 
-const Accordian = ({ data }) => {
+const Accordian = ({ data }: { data: any }) => {
   const [active, setActive] = useState<boolean>(false);
-  // console.log({ data });
 
-  const vul = data;
-  console.log(vul);
+  const vul: any = data;
 
   return (
     <div className="border-grey-300 rounded-md border-[1px]  px-4 py-3">
@@ -16,9 +16,9 @@ const Accordian = ({ data }) => {
   flex items-center justify-between "
       >
         <div className="flex gap-4">
-          <h1>{vul?.name ?? "WTF"}</h1>
+          <h1>{vul?.name ?? "Error not found"}</h1>
           <h2 className="grid place-items-center rounded-full bg-red-600 px-3 text-sm uppercase text-white">
-            {vul.priority}
+            {vul?.priority}
           </h2>
         </div>
         <div>
@@ -49,10 +49,10 @@ const Accordian = ({ data }) => {
         <div>
           <hr className="my-2" />
           <h1 className="mb-2 text-xl font-light underline ">Explanation:</h1>
-          <h1>{vul.problem}</h1>
+          <h1>{vul?.problem}</h1>
           <br />
           <h1 className="mb-2 text-xl font-light underline ">Solution:</h1>
-          <h1>{vul.solution}</h1>
+          <h1>{vul?.solution}</h1>
         </div>
       ) : null}
     </div>

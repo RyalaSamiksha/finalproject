@@ -1,5 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 "use client";
-// @ts-nocheck
 
 import React from "react";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
@@ -17,7 +17,7 @@ const Page = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
         const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
+        const token = credential?.accessToken;
         console.log(token);
       })
       .catch((error) => {

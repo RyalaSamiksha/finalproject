@@ -1,5 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-// @ts-nocheck
 
 import React, { useContext, useState } from "react";
 import { TanTable } from "./Table";
@@ -25,7 +29,6 @@ const Page = () => {
     setShowVulnerabilities(undefined);
 
     const formData = new FormData(e.target);
-
 
     const answer: number[] = thatRetardedAI([...formData][0][1]);
     console.log(answer);
