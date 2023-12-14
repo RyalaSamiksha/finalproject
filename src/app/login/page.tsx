@@ -9,8 +9,6 @@ import { useAuthState } from "react-firebase-hooks/auth";
 const provider = new GoogleAuthProvider();
 
 const Page = () => {
-  // const user = useContext(PageContext);
-
   const [user, loading, error] = useAuthState(auth);
   const router = useRouter();
 

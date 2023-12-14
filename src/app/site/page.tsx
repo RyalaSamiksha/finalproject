@@ -4,7 +4,6 @@
 
 import React, { useContext, useState } from "react";
 import { TanTable } from "./Table";
-import { PageContext } from "../layout";
 import { useRouter } from "next/navigation";
 import Accordian from "./Accordian";
 import vulnerabilies from "../contants";
