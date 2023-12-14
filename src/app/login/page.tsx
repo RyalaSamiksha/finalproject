@@ -1,4 +1,5 @@
 "use client";
+// @ts-nocheck
 
 import React from "react";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";

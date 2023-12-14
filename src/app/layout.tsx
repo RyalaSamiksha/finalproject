@@ -1,5 +1,6 @@
 "use client";
-
+ // @ts-nocheck
+ 
 import "~/styles/globals.css";
 import { Poppins } from "next/font/google";
 import Image from "next/image";

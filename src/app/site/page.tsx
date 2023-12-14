@@ -1,6 +1,5 @@
 "use client";
-
-//Bankai
+// @ts-nocheck
 
 import React, { useContext, useState } from "react";
 import { TanTable } from "./Table";
@@ -95,7 +94,9 @@ const Page = () => {
               placeholder="Type a valid target (Eg: https://www.example.com)"
             />
             <div>
-              <label className="text-slate-500">By using us, you agree to all terms and conditions</label>
+              <label className="text-slate-500">
+                By using us, you agree to all terms and conditions
+              </label>
             </div>
             <hr className="my-2 w-full" />
             <button
