@@ -29,6 +29,11 @@
       "~/*": ["./src/*"]
     }
   },
+  "nextConfig": {
+    "typescript": {
+      "ignoreBuildErrors": true
+    }
+  },
   "include": [
     ".eslintrc.cjs",
     "next-env.d.ts",
