@@ -39,7 +39,7 @@ export default function RootLayout({
       <body className={`font-sans ${inter.variable} bg-[#FAFAFA]`}>
         <nav className="flex h-24 w-screen items-center justify-between px-12 ">
           <div className="flex items-center gap-4">
-            <Image src="/review.png" alt="ASD" width={50} height={80} />
+            <Image src="https://github.com/RyalaSamiksha/finalproject/blob/master/public/review.png?raw=true" alt="ASD" width={50} height={80} />
             <h1 className="font text-4xl font-light text-violet-700 ">
               SiteFortify
             </h1>
