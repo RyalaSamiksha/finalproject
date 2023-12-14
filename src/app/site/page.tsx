@@ -26,6 +26,7 @@ const Page = () => {
 
     const formData = new FormData(e.target);
 
+
     const answer: number[] = thatRetardedAI([...formData][0][1]);
     console.log(answer);
 

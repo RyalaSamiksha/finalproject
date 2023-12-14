@@ -11,9 +11,12 @@
 
     /* Strictness */
     "strict": false,
-    "noUncheckedIndexedAccess": false,
-    "checkJs": false,
-
+    "noUncheckedIndexedAccess": true,
+    "checkJs": true,
+    "noEmitOnError": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    
     /* Bundled projects */
     "lib": ["dom", "dom.iterable", "ES2022"],
     "noEmit": true,
